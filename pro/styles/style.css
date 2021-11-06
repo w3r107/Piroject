@@ -1,0 +1,345 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Baloo 2', cursive;
+    font-family: 'Baloo Bhai 2', cursive;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+
+.header{
+    min-height: 100vh;
+    /* width: 100%; */
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url('../images/pexels-pixabay-273209.jpg');
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+
+
+
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav a img{
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    margin-left: 30px;
+}
+
+.nav-links{
+    /* flex: 1;  */
+    /* text-align: right; */
+    padding: 50px 50px;
+    z-index: 59;
+    overflow: hidden;
+    scroll-behavior: auto;
+}
+
+nav a{
+    text-decoration: none;  
+    color: wheat;
+    font-size: 3rem;
+}
+
+nav li{
+    list-style: none;
+    display: inline-block; 
+    position: relative;
+    padding: 2.5rem;
+}
+
+nav li::after{
+    content: "";
+    width: 0%;
+    height: 2px;
+    background: red;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+nav li:hover:after{
+    width: 100%;
+}
+
+nav .fa-plus-square{
+    display: none ;
+    position: absolute;
+    top: 20px;
+    right:  20px;
+    color: wheat;
+} 
+
+
+nav .fa-close{
+    display: none ;
+    position: absolute;
+    top: 0;
+    left: 0px;
+    color: wheat;
+} 
+
+
+
+
+
+
+
+
+.text-box{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: wheat;
+    text-align: center;
+}
+
+.text-box p{
+    font-size: 2rem;
+}
+
+.text-box h1{
+    font-size: 6.5rem;
+    color: white;
+}
+
+.text-box a{
+    text-decoration: none;
+    font-size: 20px;
+    border:1px solid rgb(131, 121, 121);
+}
+
+
+/* dswaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa */
+
+
+.course{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 70px;
+}
+
+.course h3{
+    color: black;
+    font-size: 4rem;
+}
+.ser{
+    display: flex;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+h1{
+    font-size: 5rem;
+}
+.course p{
+    font-size: 3rem;
+    text-align: center;
+}
+
+.chota{
+    font-size: 4rem;
+}
+
+.cr{
+
+}
+
+.campus{
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    margin: auto;
+}
+
+
+
+.serFlex {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    margin: 5rem;
+    padding: 3rem;
+}
+
+/* .flex-items-1{
+    flex-basis: 33%;
+} */
+.colCourse img{
+    width: 100%;
+    height: 600px;
+    padding: 20px;
+    text-align: center;
+    border-radius: 30px;
+}
+
+
+
+.colCourse{
+    /* display: flex; */
+    /* flex-basis: 33%; */
+    /* width: 80%; */
+}
+
+
+h3{
+    text-align: center;
+    color: white;
+}
+
+.around{
+    height: 400px;
+    width: 80%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url('../images/pexels-pixabay-273209.jpg');
+    background-position: center;
+    background-size: cover;
+    /* position: relative; */
+    overflow-x: hidden;
+    overflow-y: hidden;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.around a{
+    text-decoration: none;
+    color: wheat;
+    border:1px solid rgb(131, 121, 121);
+    font-size: 25px;
+}
+
+
+
+.abtUs{
+    text-align: center;
+    margin-top: 100px;
+
+}
+.abtUs .head{
+    font-size: 3rem;
+    display: flex;
+    flex-direction: column;
+}
+.abtUs .head .subH{
+    width: 1400px;
+    margin: auto;
+    font-size: 2rem;
+}
+
+
+.links{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    margin-bottom: 50px;
+}
+.links a{
+    padding: 5px;
+    /* margin: 10px; */
+}
+
+
+h1{
+    /* color: white; */
+    color: black;
+}
+
+.facility p{
+    font-size: 2rem;
+}
+
+.cr{
+    text-align: center;
+    border-radius: 100px;
+}
+
+
+.course .ser{
+    width: 80%;
+}
+.course .ser .colCourse{
+    background-color: rgb(129, 146, 146);
+    margin: 4px;
+    width: 80%;
+}
+
+@media(max-width:860px) {
+
+
+    .nav-links {
+        position: absolute;
+        top: 0;
+        right: -100%;
+        display: block;
+        height: 100vh;
+        background: rgb(112, 156, 150);
+        flex-direction: column;
+    }
+    .nav-links li{
+        width: 150px;
+        /* margin-top: 40px; */
+        display: block;
+        
+        padding-top: 40px;
+    }
+    nav a {
+        position: absolute;
+        top: 0px;
+
+    }
+    nav .fa-plus-square{
+        display: block ;
+        /* position: absolute;
+        top: 20px;
+        right:  20px;
+        color: wheat; */
+    } 
+    
+
+    nav .fa-close{
+        display: block;
+    }
+    
+    .ser{
+        flex-wrap: wrap;
+    }
+
+    .serFlex{
+        flex-basis: 100%;
+        flex-wrap: wrap;
+    }
+
+}
+
+
+
+/* .ser{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    align-items: center;
+} */
